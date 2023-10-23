@@ -1,3 +1,6 @@
 # acabus_backend
-instalr recursos "npm i"
+instalar recursos "npm i"
+
+
+
 iniciar "node app.js"
