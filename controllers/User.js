@@ -9,7 +9,7 @@ const Registro= async(req,res) =>{
             return res.status(400).send({ message: "Incomplete data provided" });
         }
 
-        const usuarioExistente= await Usuario.findOne({username})  
+        const usuarioExistente= await Usuario.findOne({where: { username }})  
         if(usuarioExistente){
             return res.status(400).json({ message: "Este email ya esta en uso, inicia sesion" });
         }
